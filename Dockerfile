@@ -1,4 +1,5 @@
-FROM docker.stable1.apimgcp.com/repository/docker-hosted/gateway:wlui-test
+ENV imageName docker.stable1.apimgcp.com/repository/docker-hosted/gateway:wlui-test
+FROM $imageName
 ## Copying the deployment package
 COPY build/gateway/ephemeral-gateway-latest.gw7 /opt/docker/rc.d/deployment.gw7
 ## Make restman available
