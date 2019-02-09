@@ -27,7 +27,7 @@ import com.bmuschko.gradle.docker.tasks.image.*
 
 // Use task types
 task buildDockerImage(type: DockerBuildImage) {
-	buildArgs = ["imageName": "docker.stable1.apimgcp.com/repository/docker-hosted/gateway:wlui-test"]
+	// buildArgs = ["imageName": "docker.stable1.apimgcp.com/repository/docker-hosted/gateway:wlui-test"]
     inputDir = file('./')
     tag = System.getProperty("imageName") + ":" + System.getProperty("imageTag")
 
