@@ -1,4 +1,3 @@
-ARG imageName=docker.stable1.apimgcp.com/repository/docker-hosted/gateway:wlui-test
 FROM docker.stable1.apimgcp.com/repository/docker-hosted/gateway:wlui-test
 ## Copying the deployment package
 COPY build/gateway/ephemeral-gateway-latest.gw7 /opt/docker/rc.d/deployment.gw7
