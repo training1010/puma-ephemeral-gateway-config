@@ -9,7 +9,7 @@ pipeline {
         BASE_IMAGE_REGISTRY_REPOSITORY    = 'docker-hosted'
         NEW_IMAGE_NAME = 'gateway'
         NEW_IMAGE_TAG = "v${env.BUILD_ID}"
-        NEW_IMAGE_REGISTRY_HOSTNAME = 'docker.sandbox01.apimgcp.com'
+        NEW_IMAGE_REGISTRY_HOSTNAME = 'docker.gpc.apim.ca'
         NEW_IMAGE_REGISTRY_REPOSITORY    = 'docker-hosted'
     }
 
